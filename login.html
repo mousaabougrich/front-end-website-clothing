@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mo shop</title>
+    <link rel="stylesheet" href="login1.css">
+    
+</head>
+<body>
+    <video class="back-video" autoplay muted loop>
+        <source  src="imagesweb/NEW YORKER Black Squad Summer Collection 2023.mp4" type="video/mp4">
+    </video>
+    <div >
+        <div class="navbar">
+            <div>
+               
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='#'>About Us</a></li>
+                 
+                    <li><a href='#'>Contact</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login1()' class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login' action="index.html" onsubmit="return login()">
+                    <input type='text'class='input-field'  placeholder='Email Id' id="in3"   >
+		    <input type='password'class='input-field' placeholder='Enter Password'id="in4" >
+		    <input type='checkbox'class='check-box'  onclick="showPass()"><span>show password</span>
+            <span id="s2" style="color: red;"></span><br>
+		    <button class='submit-btn'onclick="add()">Log in</button>
+		 </form>
+		 <div id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name'id="in1" required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' id="in2" required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+             <p id="s1" style="color: red;"></p>
+                    <button type='submit'class='submit-btn' onclick="add()">Register</button>
+         </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="login.js"></script>
+</body>
+</html>
